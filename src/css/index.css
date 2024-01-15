@@ -47,23 +47,7 @@ header h3 {
     line-height: 1;
 }
 
-@media only screen and (max-width: 1000px) {
-    header h1 {
-        text-align: center;
-        line-height: 1;
-        margin: 1.5rem auto;
-        font-size: 5rem;
-    }
 
-    header h3 {
-        margin: auto;
-        font-size: 2rem;
-    }
-
-    header ul {
-        display: block;
-    }
-}
 
 header ul {
     display: inline;
@@ -92,6 +76,30 @@ header a {
 header a:hover {
     background-color: aliceblue;
     border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    header h1 {
+        text-align: center;
+        line-height: 1;
+        margin: 1.5rem auto;
+        font-size: 5rem;
+    }
+
+    header h3 {
+        margin: auto;
+        font-size: 2rem;
+    }
+
+    header ul {
+        display: flex;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+    }
 }
 
 /*Main Section*/
