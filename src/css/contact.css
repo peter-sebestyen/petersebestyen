@@ -1,0 +1,89 @@
+* {
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    min-height: fit-content;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    
+}
+
+html {
+    background-color: rgb(0, 120, 124);
+}
+
+
+header ul {
+    display: inline;
+    position: relative;
+    top: 1.5rem;
+    left: 3rem;
+    list-style: none;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    background-color: rgba(240, 248, 255, 0.521);
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    transition: background-color 0.2s, border-radius 0.4s;
+}
+
+header a:hover {
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+}
+
+
+/*Form*/
+
+.contactForm {
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: rgba(250, 235, 215, 0.6);
+}
+
+.contactForm h1 {
+    color: black;
+    font-size: 3rem;
+}
+
+.contactForm label {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contactForm input {
+    width: 20rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contactForm textarea {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.contactForm button {
+    color: black;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: 1rem auto;
+}
