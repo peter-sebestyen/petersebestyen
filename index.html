@@ -7,17 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
-    <script src="./src/js/index.js"></script>
     <title>Peter Sebestyen</title>
 </head>
 <body>
+    <script type="text" src="./src/js/index.js">
+        let icon = document.getElementById('dropdownicon');
+        let menu = document.getElementById('dropdownMenu');
+        
+        icon.addEventListener('click', function(){
+            return menu.style.display = 'flex';
+        });
+        
+        function dropdown(){
+            return menu.style.display = 'flex';
+        }
+    </script>
     <header>
-        <ul>
+        <div class="dropdownicon" id="dropdownicon" onclick="dropdown();">
+            <span>></span>
+        </div>
+        <ul id="dropdownMenu">
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="./contact.html" class="hidden">Contact</a></li>
         </ul>
+
         <h1><span class="blue">Peter</span><br>Sebestyen</h1>
         <h3>Software Developer</h3>
     </header>
@@ -37,7 +52,7 @@
             <img src="./src/img/prag.jpg">
         </section>
 
-        <!--What do you need?-->
+        <!--About Me-->
 
         <section class="aboutme">
             <div class="text">

@@ -78,6 +78,25 @@ header a:hover {
     border-radius: 0.5rem;
 }
 
+.dropdownicon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(250, 235, 215, 0.50);
+    width: 3.5rem;
+    height: 3.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dropdownicon span {
+    color: rgb(60, 60, 60);
+}
+
 @media only screen and (max-width: 1000px) {
     header h1 {
         text-align: center;
@@ -91,14 +110,21 @@ header a:hover {
         font-size: 2rem;
     }
 
+    #dropdownMenu{
+        display: none;
+    }
+
     header ul {
-        display: flex;
         left: 0;
         width: 100%;
         margin: auto;
         justify-content: center;
         flex-direction: row;
         text-align: center;
+    }
+
+    .dropdownicon {
+        display: flex;
     }
 }
 
