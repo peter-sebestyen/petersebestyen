@@ -196,6 +196,24 @@ main {
     grid-row: 1 / span 2;
     width: 100%;
     max-height: 100%;
+    margin: 1rem auto 0rem auto;
+}
+
+@media only screen and (max-width: 1000px){
+    .introduction img{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+        width: 100%;
+    }
+    .introduction .text{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+    }
+
+    .introduction h1{
+        text-align: center;
+        font-size: 3rem;
+    }
 }
 
 /*What do you need?*/
@@ -241,6 +259,16 @@ main {
     max-height: 100%;
 }
 
+@media only screen and (max-width: 1000px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+}
+
 /*Projects*/
 
 .projects {
@@ -257,7 +285,7 @@ main {
 
 .project {
     display: grid;
-    width: 80%;
+    width: 90%;
     margin: 4px auto;
     border: 2px solid black;
     background-color: rgb(0, 140, 175);
@@ -302,13 +330,13 @@ main {
 }
 
 #html {
-    grid-column: 1/span 1;
-    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
 }
 
 #css {
-    grid-column: 2/span 1;
-    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
 }
 
 #js {
