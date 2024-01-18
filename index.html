@@ -10,20 +10,11 @@
     <title>Peter Sebestyen</title>
 </head>
 <body>
-    <script type="text" src="./src/js/index.js">
-        let icon = document.getElementById('dropdownicon');
-        let menu = document.getElementById('dropdownMenu');
-        
-        icon.addEventListener('click', function(){
-            return menu.style.display = 'flex';
-        });
-        
-        function dropdown(){
-            return menu.style.display = 'flex';
-        }
-    </script>
     <header>
         <div class="dropdownicon" id="dropdownicon" onclick="dropdown();">
+            <span>></span>
+        </div>
+        <div class="dropdown_close" id="dropdown_close" onclick="closeDropdown();">
             <span>></span>
         </div>
         <ul id="dropdownMenu">
@@ -128,4 +119,5 @@
         </contact>
     </footer>
 </body>
+<script src="./src/js/index.js"></script>
 </html>
